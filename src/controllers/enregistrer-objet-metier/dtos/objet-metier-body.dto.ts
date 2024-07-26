@@ -54,7 +54,9 @@ export class ObjetMetierBodyDto {
         each: true
     })
     @ValidateNested({ each: true })
-    attributsObjetsMetiers: AttributObjetMetierBodyDto[]
+    attributsObjetsMetiers: AttributObjetMetierBodyDto[
+
+        ]
 
     @ApiProperty({
         type: [MethodeObjetMetierBodyDto]    ,

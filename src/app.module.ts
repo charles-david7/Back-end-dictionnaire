@@ -11,7 +11,7 @@ import {
 
 @Module({
   imports: [],
-  controllers: [EnregistrerObjetMetierController],
+  controllers: [ConsulterObjetsMetiersController,EnregistrerObjetMetierController],
   providers: [
 
   ],
