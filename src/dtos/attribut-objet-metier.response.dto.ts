@@ -1,6 +1,7 @@
 import { ApiProperty } from "@nestjs/swagger"
 import { Expose } from "class-transformer"
 import {IsDefined} from "class-validator";
+import {Genre, GenreResponseDto} from "./genre-body.dto";
 
 @Expose()
 export class AttributObjetMetierResponseDto {

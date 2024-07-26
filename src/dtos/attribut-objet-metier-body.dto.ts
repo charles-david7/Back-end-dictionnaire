@@ -1,6 +1,8 @@
 import { IsString, IsDefined, IsOptional } from 'class-validator';
 import { ApiProperty } from "@nestjs/swagger"
 import { Expose, Type } from "class-transformer"
+import {Genre} from "../donnee/enums/genre.enum";
+import {GenreBodyDto} from "./genre-body.dto";
 
 @Expose()
 export class AttributObjetMetierBodyDto {

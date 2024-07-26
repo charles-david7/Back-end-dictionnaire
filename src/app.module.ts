@@ -1,11 +1,19 @@
 import { Module } from '@nestjs/common';
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
-import { DataGridController } from './controller/data.controller';
+import {AppService} from "./app.service";
+import {AppController} from "./app.controller";
+import {
+  EnregistrerObjetMetierController
+} from "./controllers/enregistrer-objet-metier/enregistrer-objet-metier.controller";
+import {
+  ConsulterObjetsMetiersController
+} from "./controllers/consulter-objet-metier/consulter-objets-metiers.controller";
+
 
 @Module({
   imports: [],
-  controllers: [DataGridController],
-  providers: [AppService],
+  controllers: [EnregistrerObjetMetierController],
+  providers: [
+
+  ],
 })
 export class AppModule {}
